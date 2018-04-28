@@ -1,5 +1,5 @@
 {
-  "name": "seadex",
+  "name": "seadex_token",
   "version": "0.7.3",
   "description": "SEADEX Token",
   "main": "truffle.js",
