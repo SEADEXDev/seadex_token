@@ -74,7 +74,7 @@ contract BuyerWhitelist is Ownable {
    * @dev Removes single address from whitelist. 
    * @param _beneficiary Address to be removed to the whitelist
    */
-  function removeFromWhitelist(address _beneficiary) onlyOwner public returns(bool success) {
+  function removeFromWhitelist(address _beneficiary) onlyAdmin public returns(bool success) {
     if (whitelist[_beneficiary]) {
       whitelist[_beneficiary] = false;
       emit WhitelistedAddressRemoved(_beneficiary);
